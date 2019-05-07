@@ -1,0 +1,340 @@
+@import url('../libs/fontawesome/css/font-awesome.min.css');
+
+.jimu-widget-wmxcreatejobs{
+	width: 100%;
+	height: 100%;
+	min-width: 250px;
+	min-height: 192px;
+}
+
+.jimu-aoidiv{
+  display: block;
+}
+
+.jimu-widget-wmxcreatejobs .jimu-tab{
+  position: static;
+}
+
+.jimu-widget-wmxcreatejobs .jimu-tab>.jimu-viewstack{
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  height: auto;
+}
+
+.jimu-widget-wmxcreatejobs .jimu-viewstack>.view{
+  height: auto;
+}
+
+.jimu-widget-wmxcreatejobs .tip{
+  color: #596679;
+  font-size: 14px;
+}
+
+.jimu-widget-wmxcreatejobs .add-with-icon.jimu-state-disabled{
+  color: #ccc;
+  cursor: default;
+}
+
+.jimu-widget-wmxcreatejobs .wmx-username-div{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Use row class outside properties chart */
+.floating.row, .tab.row {
+    margin: 10px;
+}
+.floating.row .row-label {
+    display: inline-block;
+    width: 50px;
+}
+
+/* Use row class in tabs */
+.tab.row label {
+    display: inline-block;
+    width: 75px;
+    font-weight: bold;
+}
+.tab.row .dijitButton {
+    margin: 0;
+}
+
+.tab.row label.textarea-label {
+    vertical-align: top;
+}
+
+.field {
+    flex-align:center
+}
+
+.jimu-tab3 .tab-item-td{
+  cursor: pointer;
+  min-width: 0;
+  white-space:nowrap;
+  border-left: black;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+.jimu-draw-box .draw-items{
+  padding-top: 10px;
+  margin:auto;
+}
+
+.jimu-draw-box .draw-items .draw-item{
+  margin: 3px;
+  width: 35px;
+  height: 35px;
+ }
+
+ .jimu-draw-box .drawings-clear{
+  margin: 3px;
+  width: 35px;
+  height: 35px;
+ }
+
+.attachment-item-row img,
+.attachment-item-row .attachment-url,
+.attachment-item-row .coordinates {
+	display: inline-block;
+}
+
+/*Calcite stuff*/
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.31rem 0.9rem;
+  width: auto;
+  color: #ffffff;
+  border: 1px solid #0079c1;
+  background-color: #0079c1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.05s linear;
+  transition: all 0.05s linear;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.9375rem;
+  line-height: 1.55rem;
+}
+
+.btn-transparent {
+  background: none;
+  color: #0079c1;
+  border: none;
+}
+
+/*WMX stuff*/
+
+.job-type-selector {
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 16px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.job-type-selector:hover {
+  background: #f8f8f8;
+}
+
+.job-type-symbol {
+  font-size: 2.5em;
+  background: #efefef;
+  border-right: 1px solid #E1E1E1;
+  color: #999;
+  height: 70px;
+  flex: 0 0 70px;
+  position: relative;
+}
+
+.job-type-symbol i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.job-type-selector:hover .job-type-symbol {
+  background: #eaeaea;
+}
+
+.job-type-symbol img {
+  width: 60px;
+  height: 60px;
+}
+
+.job-type-content {
+  margin: 10px;
+}
+
+.job-type-title {
+  margin: 0 0 .25em;
+}
+
+.wmx-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.wmx-file-uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F8F8F8;
+  border: 1px solid #efefef;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.wmx-file-uploader:hover {
+  background: #F0F0F0;
+  border-color: #E8E8E8;
+}
+
+.wmx-file-uploader img {
+  margin-bottom: 5px;
+}
+
+.wmx-file-uploader p {
+  font-style: italic;
+  color: #444;
+	text-align: center;
+}
+
+.wmx-file-uploader.upload-error {
+	background: #F8EAEA;
+	border: 1px solid #efdada;
+}
+
+.wmx-file-uploader.upload-error:hover {
+	background: #F0E6E6;
+	border: 1px solid #ead6d6;
+}
+
+.attachment-list > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attachment-list > div > * {
+  margin: 0 4px;
+}
+
+.wmx-success-panel {
+  font-size: 0.9375rem;
+  line-height: 1.55rem;
+  padding: 0.775rem 0.775rem;
+  margin-bottom: 0.775rem;
+  color: rgba(0, 0, 0, 0.75);
+  background-color: #ddeedb;
+  position: relative;
+  z-index: 100;
+  max-width: 40em;
+  border: 1px solid #9bc19c;
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+  color: #4c4c4c;
+}
+
+.wmx-error-panel {
+  font-size: 0.9375rem;
+  line-height: 1.55rem;
+  padding: 0.775rem 0.775rem;
+  margin-bottom: 0.775rem;
+  background-color: #eeeeee;
+  position: relative;
+  z-index: 100;
+  max-width: 40em;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+  color: #ff3333;
+}
+
+.wmx-create-job-content h2 {
+  text-align: center;
+  margin: 0 0 10px;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 10px;
+}
+
+.wmx-create-job-content h3 {
+  font-size: 1.2em;
+  color: #888;
+}
+
+.jimu-item-form .input-label {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.jimu-item-form .input-item {
+  width: 60%;
+}
+
+.jimu-item-form .input-item.input-item-full-width {
+	width: 100%;
+}
+
+.create-job-form-row {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.job-type-filter {
+  padding: 0 0 10px 0;
+  display: flex;
+}
+
+.job-type-filter button {
+  cursor: pointer;
+  flex: 0 0 16px;
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin-left: 10px;
+  opacity: .8;
+}
+
+.job-type-filter button:hover {
+  opacity: 1;
+}
+
+.job-type-filter input {
+  flex: 1 0 auto;
+}
+
+.wmx-create-job-loader {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.wmx-create-job-spinner {
+  text-align: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 20px;
+}
+
+.wmx-create-job-spinner img {
+	margin: 15px;
+}

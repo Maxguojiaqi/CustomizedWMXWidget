@@ -1,0 +1,191 @@
+@import url("list.css");
+@import url('../../libs/fontawesome/css/font-awesome.min.css');
+
+/* jimu-widget-coordinate-setting */
+.jimu-widget-wmxcreatejob-setting{
+  margin:0;
+  padding:0;
+  font-size:15px;
+}
+.jimu-widget-wmxcreatejobs-setting .dijitArrowButtonContainer{
+  width: 17px;
+}
+
+.jimu-widget-wmxcreatejobs-setting .setting-table > thead > tr > th,
+.jimu-widget-wmxcreatejobs-setting .setting-table > tbody > tr > td{
+  height:40px;
+  line-height:40px;
+  vertical-align:middle;
+}
+
+.jimu-widget-wmxcreatejobs-setting .input-table > tbody > tr > .first{
+  width:auto;
+  text-align: right;
+  padding-right:15px;
+  min-width: 200px;
+}
+
+.jimu-widget-wmxcreatejobs-setting .input-table > tbody > tr > .second{
+  width:650px;
+}
+
+.widget-setting-popup .content {
+  display: flex;
+}
+
+.jimu-widget-wmxcreatejobs-setting .items-list {
+  flex: 0 0 300px;
+  position: relative;
+  border-right: 1px solid #ccc;
+}
+
+.job-content {
+  flex: 1 0 auto;
+  padding: 5px 0 5px 10px;
+}
+
+.job-content table {
+  margin-top: 10px;
+  width: 100%;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 6px;
+}
+
+th {
+  background: #666;
+  color: #fff;
+}
+
+.job-type-item {
+  display: flex;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.job-type-item:hover {
+  background: #fafafa;
+}
+
+.job-type-item.selected {
+  background: #efefef;
+}
+
+.job-type-item p {
+  flex: 1 0 auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: calc(100% - 20px);
+}
+
+.job-type-item .item-button {
+  flex: 0 0 20px;
+  padding: 2px 4px;
+  color: #999;
+}
+
+.job-type-item .item-button:hover {
+  color: #666;
+}
+
+.hint-text {
+  color: #888;
+  font-style: italic;
+}
+
+.no-task-tip {
+  display: none;
+  text-align: center;
+  color: #888;
+}
+
+.no-type-selected .no-task-tip {
+  display: block;
+}
+.no-type-selected .extended-props-table {
+  display: none;
+}
+
+.task-tip {
+  color: #888;
+  text-align: center;
+  margin: 10px;
+}
+
+.hr-light {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.job-type-selects > * {
+  vertical-align: middle;
+}
+
+.font-awesome-select-label {
+  margin-left: 20px;
+}
+
+.font-awesome-select {
+  max-width: 80px;
+  margin: 0 !important;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.wmx-settings-error-container {
+  display: none;
+}
+
+.settings-error-visible .wmx-settings-error-container {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.3);
+  z-index: 9999;
+  -webkit-animation: fade-in 275ms forwards cubic-bezier(0.4, 0.0, 0.2, 1);
+  animation: fade-in 275ms forwards cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.wmx-settings-error-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+.wmx-settings-error-panel > div {
+  padding: 10px;
+}
+
+.wmx-settings-error-header {
+  border-bottom: 1px solid #ccc;
+}
+
+@-webkit-keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
