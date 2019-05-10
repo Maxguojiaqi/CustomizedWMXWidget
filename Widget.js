@@ -124,8 +124,6 @@ define([
         EXTPROPS: 2
       },
 
-      customizedNote: null,
-
       /*********************************************************/
       // BaseWidget events
 
@@ -1068,11 +1066,7 @@ define([
               // Retrieve job extended properties, then update
               console.log('Job extended properties retrieved successfully', data);
               this.jobTypeExtendedProperties = data;
-              this.customizedNote = String(this.jobTypeExtendedProperties[0].records[0].recordValues[3].data);
               this._updateExtendedProperties(data);
-
-              // Get Job notes
-              this._getNotes();
 
             }),
             lang.hitch(this, function (error) {
@@ -1080,8 +1074,6 @@ define([
               this._handleRequestResponse(this.ResponseType.EXTPROPS, error);
             }));
         } else {
-          // Get Job notes
-          this._getNotes();
           this._handleRequestResponse(this.ResponseType.EXTPROPS);
         }
 
@@ -1094,9 +1086,9 @@ define([
       },
 
       // This function handles getting information 
-      _getNotes: function (){
-        if (this.customizedNote) {
-          this.wmJobTask.updateNotes(this.jobId, this.customizedNote, this.user,
+      _getNotes: function (defaultNotes){
+        if (defaultNotes) {
+          this.wmJobTask.updateNotes(this.jobId, defaultNotes, this.user,
             lang.hitch(this, function (response) {
               console.log((response.success ? 'Successfully' : 'Unsuccessfully') + ' updated job notes');
               this._handleRequestResponse(this.ResponseType.NOTES);
@@ -1123,10 +1115,10 @@ define([
           var fieldValue = extPropsFormData[i].querySelectorAll('input[name=' + configuredExtProps[i].fieldName + ']')[0]
             ? extPropsFormData[i].querySelectorAll('input[name=' + configuredExtProps[i].fieldName + ']')[0].value
             : null;
-          // Below code is added to capture the customze Notes
-          if (i==4)
+
+          if(configuredExtProps[i].fieldName == "Quick_Note")
           {
-            this.customizedNote = String(fieldValue);
+            this._getNotes(fieldValue);
           }
 
           if (fieldValue && configuredExtProps[i].displayType === '2') {
